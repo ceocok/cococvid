@@ -25,7 +25,18 @@
   <link rel="stylesheet" crossorigin href="/assets/index-6RdejNkO.css">
 </head>
 
-  <body>
+ <body>
     <div id="root"></div>
+    <script type="text/javascript">
+      // 检查是否有从404页面重定向过来的路径
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== window.location.pathname) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
