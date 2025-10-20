@@ -7,6 +7,8 @@
   "scripts": {
     "dev": "npm --workspace apps/cf-worker-wizard run dev",
     "build": "npm --workspace apps/cf-worker-wizard run build",
-    "start": "npm --workspace apps/cf-worker-wizard run start"
+    "start": "npm --workspace apps/cf-worker-wizard run start",
+    "lint": "npm --workspace apps/cf-worker-wizard run lint",
+    "format": "npm --workspace apps/cf-worker-wizard run format"
   }
 }
