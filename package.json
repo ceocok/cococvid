@@ -1,6 +1,7 @@
 {
   "name": "cf-worker-wizard-monorepo",
   "private": true,
+  "license": "MIT",
   "workspaces": [
     "apps/*"
   ],
